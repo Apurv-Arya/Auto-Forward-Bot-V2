@@ -2,7 +2,7 @@ FROM python:3.8-slim-buster
 
 RUN apt update && apt upgrade -y
 RUN apt install git -y
-RUN apt-get install gcc
+RUN apt-get install gcc -y
 COPY requirements.txt /requirements.txt
 
 RUN cd /
